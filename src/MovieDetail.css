@@ -1,0 +1,128 @@
+header{
+    padding-bottom: 2rem;
+}
+.MovieDetail{
+    background: #111;
+    color: white;
+    width: 100%;
+    height: 600px;
+    min-height: 53vh;
+    margin-bottom: 10px;
+    position: relative;
+    z-index:-3;
+}
+.MovieDetail-content {
+    margin-left: 20px;
+    padding-top: 140px;
+    /* height: 190px; */
+}
+.MovieDetail-title {
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 0.3rem;
+}
+@media screen and (max-width:550px){
+    .MovieDetail-title,
+    .trailer-title{
+        font-size: 25px;   
+    }
+    .MovieDetail-video h1,
+    .MovieDetail-more-details h1{
+        font-size: 24px;
+    }   
+    .MovieDetail-video-vid{
+        height:250px;
+    }
+}
+.MovieDetail-desc {
+    color: rgb(238, 236, 236);
+    /* background: purple; */
+    /* width: 45rem; */
+    /* max-width: 330px; */
+    max-width: 75vmin;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    line-height: 1.3;
+    word-spacing: 2px;
+    height: 80px;
+}
+
+.MovieDetail-fade{
+    position: absolute;
+    /* top: 480px; */
+    bottom: 0;
+    z-index:-2;
+    height: 34rem;
+    width: 100%;
+    background-image: linear-gradient(
+      180deg,
+      transparent,
+      rgba(37, 37, 37, 0.61),
+      #111
+    );
+}
+.MovieDetail-more-details{
+    margin:0 0 20px 20px ;
+}
+.MovieDetail-more-details h1{
+    margin:0 0 5px 0px ;
+    color: white;
+    font-weight:600;
+}    
+.MovieDetail-genres{
+    display:flex;
+    align-items:center;
+    color: rgb(223, 223, 223);
+    margin-bottom: 10px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.genre{
+    margin:0 8px 7px 0;
+    /* font-size: 18px; */
+}
+.MovieDetail-casts{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /* padding: 20px 0; */
+    margin: 0 20px 0 0;
+  }
+  /* to hide the scroll bar but keeping the functionality of scrolling */
+.MovieDetail-casts::-webkit-scrollbar,
+.MovieDetail-genres::-webkit-scrollbar {
+   display: none;
+}
+.cast{
+    width: 120px;
+    height: auto;
+    /* min-height: 200px; */
+    margin-right: 10px;
+}
+.cast-name{
+    color: rgb(223, 223, 223);
+    margin-right: 10px;
+    /* font-size: 20px; */
+}
+
+.MovieDetail-video-container{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.trailer-title{
+    color: white;
+    margin:0 0 7px 20px ;
+    font-weight:600;
+}
+.MovieDetail-video{
+    width: 100%;
+    max-width:900px;
+    margin:0 20px 20px 20px ;
+    height:auto;
+}
+
+.MovieDetail-video h1{
+    margin:0 0 10px 0px ;
+    color: white;
+}

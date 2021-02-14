@@ -1,0 +1,48 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+  height: 30px;
+
+  position: fixed;
+  top: 0;
+
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+.nav-black {
+  background: rgba(0, 0, 0, 0.9);
+  /* background: black; */
+  transition: all 0.3s ease;
+}
+.nav-logo {
+  position: fixed;
+  left: 20px;
+
+  margin-top: 2.6px;
+  object-fit: contain;
+  width: 90px;
+}
+.nav-search-icon{
+  position: fixed;
+  right: 75px;
+  margin-top: 3px;
+  color:white;
+  object-fit: contain;
+  /* background: pink; */
+  transition: all 0.35s ease;
+}
+.nav-search-icon:hover{
+  color:rgb(221, 17, 17);
+  transition: all 0.35s ease;
+
+}
+
+.nav-avatar {
+  position: fixed;
+  right: 20px;
+
+  object-fit: contain;
+  width: 30px;
+}

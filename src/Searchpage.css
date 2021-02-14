@@ -1,0 +1,52 @@
+.searchpage{
+    margin-top: 60px;
+    padding: 2rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 700px){
+    .searchpage{
+        padding: 1.5rem ;
+    }
+}
+.searchpage form{
+    height: 45px;
+    width: 80vmin;
+    min-width: 4rem;
+    overflow: hidden;
+    border-radius: 0.4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+}
+.searchpage input{
+    background: rgb(53, 53, 53);
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    height: 35px;
+    width: 92%;
+    border: none;
+    outline: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+}
+.searchpage button{
+    color: white;
+    background: rgb(53, 53, 53);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 47px;
+    transition: all 0.35s ease;
+}
+.searchpage button:hover{
+  color:rgb(221, 17, 17);
+  transition: all 0.35s ease;
+}
